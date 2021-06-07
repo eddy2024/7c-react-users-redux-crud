@@ -37,13 +37,13 @@ function UserForm(props) {
 
   return (
     <div>
-      <form>
+      <form className="formShadow">
         <div>
          <Form.Group controlId="formBasicEmail">
           <Form.Label>User Name</Form.Label>
           <Form.Control 
           type="email" 
-          placeholder="Enter email" 
+          placeholder="Enter User Name" 
           name="username"
           value={state.username} //the value will the same as data in the state
           onChange={handleOnChange} //we setup onchange to call our handle onchange function
